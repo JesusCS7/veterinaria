@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Treatment extends Model
 {
   use HasFactory;
-    public function pacient(): BelongsTo
+    public function patient(): BelongsTo
     {
-        return $this->belongsTo(pacient::class);
+        return $this->belongsTo(patient::class);
     }
 }
